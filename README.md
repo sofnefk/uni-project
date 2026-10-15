@@ -13,7 +13,8 @@ This automates that and makes it interactive.
 - Flashcards, multiple choice and true/false quizzes with scoring
 - Download results as JSON and reload them later without calling the AI
 - Auto-retry when the API is busy
-<img width="998" height="660" alt="image" src="https://github.com/user-attachments/assets/e62ae88f-381d-4165-b8ce-4f34ea0fb5ae" />
+<img width="1656" height="746" alt="image" src="https://github.com/user-attachments/assets/1ee989eb-e729-44c3-9488-b0f062b80cfe" />
+<img width="1471" height="870" alt="image" src="https://github.com/user-attachments/assets/7d717634-c2a1-49ae-b2b3-3a201bd7b30c" />
 
 ## Setup
 1. Install Python 3.10+
@@ -38,6 +39,4 @@ python -m streamlit run app.py
 Python, Streamlit, Google Gemini API, pypdf, python-docx
 
 ## Roadmap
-- Smarter, more structured notes
 - Syllabus parsing and a week-by-week view
-- Chunking for long documents
