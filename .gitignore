@@ -1,0 +1,6 @@
+.env
+output/
+__pycache__/
+test*/
+*.pdf
+*.docx
