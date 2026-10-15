@@ -13,6 +13,7 @@ This automates that and makes it interactive.
 - Flashcards, multiple choice and true/false quizzes with scoring
 - Download results as JSON and reload them later without calling the AI
 - Auto-retry when the API is busy
+<img width="998" height="660" alt="image" src="https://github.com/user-attachments/assets/e62ae88f-381d-4165-b8ce-4f34ea0fb5ae" />
 
 ## Setup
 1. Install Python 3.10+
