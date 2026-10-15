@@ -81,11 +81,24 @@ tab_notes, tab_cards, tab_mcq, tab_tf, tab_qa = st.tabs(
 
 # ---------- notes ----------
 with tab_notes:
-    st.subheader("Summary")
-    st.write(data.get("summary", ""))
-    st.subheader("Key points")
-    for b in data.get("bullet_points", []):
-        st.markdown(f"- {b}")
+    if "overview" in data:
+        st.subheader("Overview")
+        st.write(data["overview"])
+        st.subheader("⭐ Must know")
+        for m in data.get("must_know", []):
+            st.markdown(f"- {m}")
+        st.subheader("Notes by section")
+        for s in data.get("sections", []):
+            with st.expander(s["title"], expanded=True):
+                for n in s["notes"]:
+                    st.markdown(f"- {n}")
+    else:  # old v1 files
+        st.subheader("Summary")
+        st.write(data.get("summary", ""))
+        st.subheader("Key points")
+        for b in data.get("bullet_points", []):
+            st.markdown(f"- {b}")
+
     st.subheader("Keywords")
     for k in data.get("keywords", []):
         st.markdown(f"- **{k['term']}**: {k['definition']}")
